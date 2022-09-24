@@ -1,0 +1,8 @@
+name: Event Push Script Test
+on: [push]
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "script done!"
+      - run: sh main.sh
